@@ -1,0 +1,19 @@
+.menu-content-wrapper {
+    min-height: 900px;
+    overflow: auto;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse .nav-item {
+        border-bottom: 1px solid #666;
+    }
+
+    .navbar-collapse .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-collapse .nav-item a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
