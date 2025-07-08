@@ -3,32 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Restaurant Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food, LLC - Our Menu</title>
     <link rel="stylesheet" href="examples/Lecture25/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav id="header-nav" class="navbar navbar-default">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Food, LLC</a>
-                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto d-md-none">
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#chicken-heading">Chicken</a>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Food, LLC</a>
+
+                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li class="text-center">
+                            <a href="#">Chicken</a>
                         </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#beef-heading">Beef</a>
+                        <li class="text-center">
+                            <a href="#">Beef</a>
                         </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="#sushi-heading">Sushi</a>
+                        <li class="text-center">
+                            <a href="#">Sushi</a>
                         </li>
                     </ul>
                 </div>
@@ -36,68 +41,42 @@
         </nav>
     </header>
 
-    <main class="container">
-        <h1 class="text-center my-4">Our Menu</h1>
-        <section id="full-menu-section" class="row">
-            <div class="col-12">
-                <div class="p-3 my-3 border bg-light menu-content-wrapper">
-                    <h2 class="text-center" id="chicken-heading">Chicken</h2>
+    <div id="main-content" class="container">
+        <h1 class="text-center">Our Menu</h1>
+
+        <section id="graded-main-section" class="row">
+            <div class="col-xs-12">
+                <div class="section-content">
+                    <h3 class="text-center">Chicken</h3>
                     <p>
-                        Our succulent grilled chicken breast is marinated in a blend of herbs and spices, then perfectly
-                        cooked to tender perfection. Served with a side of steamed seasonal vegetables and a light
-                        lemon-herb sauce, it's a healthy yet flavorful choice for any time of day. We pride ourselves on
-                        using locally sourced, free-range chicken for the freshest taste.
+                        Our succulent grilled chicken breast is marinated in a blend of herbs and spices, then perfectly cooked to tender perfection. Served with a side of steamed seasonal vegetables and a light lemon-herb sauce, it's a healthy yet flavorful choice for any time of day. We pride ourselves on using locally sourced, free-range chicken for the freshest taste.
                         <br><br>
-                        Every bite offers a juicy texture and a burst of natural flavors, making it a favorite among our
-                        regulars. It's a fantastic source of lean protein, ideal for those looking for a balanced meal
-                        without compromising on taste.
+                        Every bite offers a juicy texture and a burst of natural flavors, making it a favorite among our regulars. It's a fantastic source of lean protein, ideal for those looking for a balanced meal without compromising on taste.
                         <br><br>
-                        This dish embodies our commitment to fresh ingredients and masterful cooking techniques. Enjoy
-                        it with a glass of crisp white wine for a truly delightful dining experience.
-                    </p>
-                    <p class="d-block d-md-none text-end"> <a href="#top">Back to Top</a>
-                    </p>
-                    <hr>
-                    <h2 class="text-center" id="beef-heading">Beef</h2>
-                    <p>
-                        Indulge in our slow-braised beef short ribs, cooked until they are fall-off-the-bone tender in a
-                        rich, savory red wine reduction. This hearty dish is accompanied by creamy mashed potatoes,
-                        absorbing all the delicious juices. It’s the ultimate comfort food, prepared with passion and
-                        slow-cooked to bring out the deepest flavors.
+                        This dish embodies our commitment to fresh ingredients and masterful cooking techniques. Enjoy it with a glass of crisp white wine for a truly delightful dining experience.
                         <br><br>
-                        Our beef is selected for its marbling and quality, ensuring a melt-in-your-mouth experience with
-                        every forkful. The robust flavors of the beef and wine reduction create a truly satisfying and
-                        memorable meal that is perfect for a special occasion or a hearty dinner.
+                        Indulge in our slow-braised beef short ribs, cooked until they are fall-off-the-bone tender in a rich, savory red wine reduction. This hearty dish is accompanied by creamy mashed potatoes, absorbing all the delicious juices. It's the ultimate comfort food, prepared with passion and slow-cooked to bring out the deepest flavors.
                         <br><br>
-                        Experience the dedication in every plate, as we meticulously prepare each serving to meet our
-                        high standards of taste and presentation. Pair it with a full-bodied red wine to enhance its
-                        rich profile.
-                    </p>
-                    <p class="d-block d-md-none text-end"> <a href="#top">Back to Top</a>
-                    </p>
-                    <hr>
-                    <h2 class="text-center" id="sushi-heading">Sushi</h2>
-                    <p>
-                        Explore our exquisite selection of freshly prepared sushi, featuring a vibrant array of nigiri,
-                        sashimi, and maki rolls. Our expert sushi chefs craft each piece with precision, using the
-                        freshest seafood sourced daily. From classic tuna and salmon to exotic specialty rolls, there’s
-                        something to tantalize every palate.
+                        Our beef is selected for its marbling and quality, ensuring a melt-in-your-mouth experience with every forkful. The robust flavors of the beef and wine reduction create a truly satisfying and memorable meal that is perfect for a special occasion or a hearty dinner.
                         <br><br>
-                        Each piece of sushi is a work of art, showcasing the natural beauty and delicate flavors of the
-                        ingredients. We use premium sushi rice, seasoned just right, to complement the fresh fish and
-                        vegetables. Our menu includes vegetarian options and cooked rolls as well, ensuring variety for
-                        everyone.
+                        Experience the dedication in every plate, as we meticulously prepare each serving to meet our high standards of taste and presentation. Pair it with a full-bodied red wine to enhance its rich profile.
                         <br><br>
-                        Dive into a world of authentic Japanese flavors, presented beautifully and served with
-                        traditional accompaniments like soy sauce, wasabi, and pickled ginger. A perfect choice for a
-                        light lunch or a sophisticated dinner.
-                    </p>
-                    <p class="d-block d-md-none text-end"> <a href="#top">Back to Top</a>
+                        Explore our exquisite selection of freshly prepared sushi, featuring a vibrant array of nigiri, sashimi, and maki rolls. Our expert sushi chefs craft each piece with precision, using the freshest seafood sourced daily. From classic tuna and salmon to exotic specialty rolls, there's something to tantalize every palate.
+                        <br><br>
+                        Each piece of sushi is a work of art, showcasing the natural beauty and delicate flavors of the ingredients. We use premium sushi rice, seasoned just right, to complement the fresh fish and vegetables. Our menu includes vegetarian options and cooked rolls as well, ensuring variety for everyone.
+                        <br><br>
+                        Dive into a world of authentic Japanese flavors, presented beautifully and served with traditional accompaniments like soy sauce, wasabi, and pickled ginger. A perfect choice for a light lunch or a sophisticated dinner.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <br><br>
+                        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
             </div>
         </section>
-    </main>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="examples/Lecture25/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
